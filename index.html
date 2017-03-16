@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wsh-u</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style type="text/css">
+	body,textarea,input,select,option{color:#333;font-size:14px;line-height:1.5em;font-family:"microsoft yahei"}body,h1,h2,h3,h4,h5,h6,p,dl,dd,dt,ul,ol,textarea,input,select,option,form,th,td,ul,ol,textarea,input,select,option{margin:0;padding:0;box-sizing:content-box}a{text-decoration:none;color:#333}a,textarea,input{outline:0}textarea{overflow:auto;resize:none}table{border-collapse:collapse}li{list-style:none}a img{display:block;border:0}body{background-color:#fff}.fl{float:left}.fr{float:right}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}img.img{display:block}label,label input{vertical-align:middle}.btn{cursor:pointer;border:0}.rel{position:relative}.abs{position:absolute}i,em{font-style:normal}h1,h2,h3,h4,h5,h6{font-weight:normal}a img{vertical-align:middle}.top{width:100%;height:30px;line-height:30px;background-color:#f9f9f9;border-bottom:1px #e5e5e5 solid;}
+.focurs{width: 1200px;height: 560px; overflow: hidden;position: relative;}
+.focurs .f-titbox{position: absolute;left: 0;bottom: 0;width: 100%; height: 43px;}
+.focurs .f-border{border-bottom: 1px solid #bdbdbd;}
+.focurs .f-bg{background: #000;opacity: .3;filter: alpha(opacity=30);z-index: 999;}
+.focurs .tit{position: absolute;width: 100%;left: 17px; height: 43px;font-size: 14px;color: #fff;line-height: 43px;z-index: 1000;}
+.focurs .banner-list{width: 100000px;position: relative;left: 0;transition:transform .5s;}
+.focurs .banner-list li{ width: 1200px; height: 560px;position: relative;}
+.focurs .ul-status{position: absolute;right: 30px;bottom: 10px; width: 200px;z-index: 1001;}
+.focurs .ul-status li{float: left; width: 10px;height: 20px;margin: 0 5px; background: #ff0;}
+.focurs .ul-status li.cur{background: #f00;}
+.focurs .btnLeft,.focurs .btnRight{position: absolute;top: 50%; height: 113px; width: 38px; margin-top: -29px;background: #ccc;}
+.focurs .btnLeft{left: 0;}
+.focurs .btnRight{right: 0;}
+.test{ width: 200px;height: 200px;background: #ff0;}
+
+.jsleft .banner-list li{float: left; width: 1200px; height: 560px;position: relative;}
+
+#wshfocurs2 ul{position: relative;}
+#wshfocurs2 li{position: relative;}
+
+#wshfocurs3 ul{left: -1200px;}
+	</style>
+</head>
+<body>
+		
+
+		<div id="wshfocurs3" class="focurs jsleft">
+              <ul  class="banner-list clearfix">         
+	                <li data-num="1">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/4f/35/f/305a01eca920d4517877a19995a_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适1</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                <li data-num="2">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/75/d8/f/0a472d9ec3d17058477adcbe833_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适2</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                <li data-num="3">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/4f/35/f/305a01eca920d4517877a19995a_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适3</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                 <li data-num="4">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/4f/35/f/305a01eca920d4517877a19995a_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适4</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                           
+              </ul>
+              <ol id="ul-status" class="ul-status">
+	              	<li class="cur"></li>
+	              	<li></li>
+	              	<li></li>
+	              	<li></li>
+              </ol>
+              <a href="javascript:;" class="btnLeft">左按钮</a>
+              <a href="javascript:;" class="btnRight">右按钮</a>
+            </div>
+
+           <!--  <div id="wshfocurs2" class="focurs">
+              <ul  class="banner-list clearfix">
+		            <li data-num="1">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/75/d8/f/0a472d9ec3d17058477adcbe833_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适1</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                <li data-num="2">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/4f/35/f/305a01eca920d4517877a19995a_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适2</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                <li data-num="3">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/75/d8/f/0a472d9ec3d17058477adcbe833_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适3</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+	                <li data-num="4">
+	                 	<a href="http://jiaju.sina.com.cn/zt/91coupon/" target="_black"><img src="http://src.leju.com/imp/imp/deal/4f/35/f/305a01eca920d4517877a19995a_p24_mk24.jpg" alt="banner-img"  width="1200" height="569"></a>
+	                    <div class="f-titbox f-border">
+	                        <p class="tit">坐垫OR懒人沙发舒适4</p>
+	                        <p class="f-titbox f-bg"></p>
+	                    </div>
+	                </li>
+              </ul>
+              <ol id="ul-status" class="ul-status">
+	              	<li class="cur"></li>
+	              	<li></li>
+	              	<li></li>
+	              	<li></li>
+              </ol>
+              <a href="javascript:;"  class="btnLeft">左按钮</a>
+              <a href="javascript:;"  class="btnRight">右按钮</a>
+            </div> -->
+
+			
+      
+<script src="js/wsh.js"></script>
+<script src="js/main-bak.js"></script>
+
+</body>
+</html>
